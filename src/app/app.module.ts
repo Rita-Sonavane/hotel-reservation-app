@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReservationModule } from './reservation/reservation.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    ReactiveFormsModule
+    ReservationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
