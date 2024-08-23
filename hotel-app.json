@@ -1,0 +1,319 @@
+{
+  "uuid": "ae988515-5bbb-4b74-abd6-5bf349a2ae90",
+  "lastMigration": 32,
+  "name": "Hotel app",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ad3926fb-3e62-4ea8-9c53-1341ac6badca",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservations",
+      "responses": [
+        {
+          "uuid": "566e643a-24ca-464d-9915-449a30ae236f",
+          "body": "[\n{\n \"id\" : \"1\",\n \"guestName\":\"Rita Sonavane\",\n \"guestEmail\":\"rita@gmail.com\",\n \"checkInDate\":\"2024-08-14\",\n \"checkOutDate\":\"2024-08-14\",\n \"roomNumber\":\"4\"\n},\n{\n \"id\" : \"2\",\n \"guestName\":\"Shubham Walhekar\",\n \"guestEmail\":\"shubham@gmail.com\",\n \"checkInDate\":\"2024-08-14\",\n \"checkOutDate\":\"2024-08-14\",\n \"roomNumber\":\"4\"\n}  \n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "014348db-adb7-449b-911f-999ddc21dbbf",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"guestName\": \"Rita Sonavane\",\n    \"guestEmail\": \"rita@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  },\n  {\n    \"id\": \"2\",\n    \"guestName\": \"Shubham Walhekar\",\n    \"guestEmail\": \"shubham@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "ead0a7cd-909a-4670-a9f5-024c0c605945",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "45c92fca-598f-4650-9a80-f6e20c5a2ed8",
+          "body": "{\n \"id\" : \"1\",\n \"guestName\":\"Rita Sonavane\",\n \"guestEmail\":\"rita@gmail.com\",\n \"checkInDate\":\"2024-08-14\",\n \"checkOutDate\":\"2024-08-14\",\n \"roomNumber\":\"4\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "88709d81-b6c8-4106-ba60-f48522f1f020",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"guestName\": \"Rita Sonavane\",\n    \"guestEmail\": \"rita@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  },\n  {\n    \"id\": \"2\",\n    \"guestName\": \"Shubham Walhekar\",\n    \"guestEmail\": \"shubham@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "07d3c002-8d9c-4a57-9639-6b44cbce0857",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "78708ff4-06ac-4d6c-b224-809dbfc895f1",
+          "body": "{\n \"id\" : \"1\",\n \"guestName\":\"Rita Sonavane\",\n \"guestEmail\":\"rita@gmail.com\",\n \"checkInDate\":\"2024-08-14\",\n \"checkOutDate\":\"2024-08-14\",\n \"roomNumber\":\"4\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3e5cad63-1785-4c76-a29d-c3de335113e6",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"guestName\": \"Rita Sonavane\",\n    \"guestEmail\": \"rita@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  },\n  {\n    \"id\": \"2\",\n    \"guestName\": \"Shubham Walhekar\",\n    \"guestEmail\": \"shubham@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "17914760-4156-41d7-84af-415f8d1e383d",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "4ddb3461-776c-4703-83b4-e64031398e31",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "64d6dc2e-c635-4827-b092-579bee422196",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"guestName\": \"Rita Sonavane\",\n    \"guestEmail\": \"rita@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  },\n  {\n    \"id\": \"2\",\n    \"guestName\": \"Shubham Walhekar\",\n    \"guestEmail\": \"shubham@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "62c74282-e57f-4594-a987-8b71915ec842",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "reservation",
+      "responses": [
+        {
+          "uuid": "a8461e9c-feff-440e-8c34-47258553993e",
+          "body": "",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "8415f2f9-3354-4d55-92f1-8a2994584ee3",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"guestName\": \"Rita Sonavane\",\n    \"guestEmail\": \"rita@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  },\n  {\n    \"id\": \"2\",\n    \"guestName\": \"Shubham Walhekar\",\n    \"guestEmail\": \"shubham@gmail.com\",\n    \"checkInDate\": \"2024-08-14\",\n    \"checkOutDate\": \"2024-08-14\",\n    \"roomNumber\": \"4\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ad3926fb-3e62-4ea8-9c53-1341ac6badca"
+    },
+    {
+      "type": "route",
+      "uuid": "ead0a7cd-909a-4670-a9f5-024c0c605945"
+    },
+    {
+      "type": "route",
+      "uuid": "07d3c002-8d9c-4a57-9639-6b44cbce0857"
+    },
+    {
+      "type": "route",
+      "uuid": "17914760-4156-41d7-84af-415f8d1e383d"
+    },
+    {
+      "type": "route",
+      "uuid": "62c74282-e57f-4594-a987-8b71915ec842"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
